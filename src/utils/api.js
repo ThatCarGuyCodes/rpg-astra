@@ -29,9 +29,11 @@ const getSkills = async () => {
     return response.json();
   };
   
-  export default {
+  const exportedObject = {
     getSkills,
     createSkill,
     deleteSkill,
     updateSkill,
   };
+
+  export default exportedObject;
